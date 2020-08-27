@@ -21,13 +21,13 @@ def run_guessing_game
   if user_num.length == 1
     user_num = user_num.to_i
     if user_num == num
-      puts "You guessed the correct number!"
+      print "You guessed the correct number!"
     else
-      puts "Sorry! The computer guessed #{num}"
+      print "Sorry! The computer guessed #{num}."
     end
   else
     if user_num == "exit"
-      puts "Goodbye!"
+      print "Goodbye!"
     end
   end
 end
