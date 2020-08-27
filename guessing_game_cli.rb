@@ -5,7 +5,6 @@ def random_num
 end
 
 def get_user_guess
-  puts "Enter number between 1 and 6"
   num = gets.chomp
   #if num.length == 1
   #  num = num.to_i
