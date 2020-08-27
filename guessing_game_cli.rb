@@ -20,11 +20,16 @@ def run_guessing_game
   binding.pry
   user_num = get_user_guess
   binding.pry
-  if user_num == num
-    puts "You guessed the correct number!"
-  elsif user_num == "exit"
-    puts "Goodbye!"
+  if user_num.length == 1
+    user_num = user_num.to_i
+    if user_num == num
+      puts "You guessed the correct number!"
+    else
+      puts "Sorry! The computer guessed #{num}"
+    end
   else
-    puts "Sorry! The computer guessed #{num}."
+    if user_num == "exit"
+      puts "Goodbye!"
+    end
   end
 end
