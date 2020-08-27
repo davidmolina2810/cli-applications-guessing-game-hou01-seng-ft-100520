@@ -5,7 +5,8 @@ end
 
 def get_user_guess
   puts "Enter number between 1 and 6"
-  gets.chomp
+  num = gets.chomp
+  num.to_i
 end
 
 def run_guessing_game
