@@ -14,7 +14,6 @@ end
 def run_guessing_game
   num = random_num
   user_num = get_user_guess
-  binding.pry
   if user_num == num
     puts "You guessed the correct number!"
   elsif user_num == "exit"
