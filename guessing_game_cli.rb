@@ -13,6 +13,7 @@ def get_user_guess
   else
     num
   end
+  num
 end
 
 def run_guessing_game
