@@ -8,7 +8,7 @@ end
 def get_user_guess
   puts "Enter number between 1 and 6"
   num = gets.chomp
-  if num.length = 1
+  if num.length == 1
     num.to_i
   else
     num
