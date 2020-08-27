@@ -8,19 +8,18 @@ end
 def get_user_guess
   puts "Enter number between 1 and 6"
   num = gets.chomp
-  binding.pry
-  if num.length == 1
-    num = num.to_i
-  else
-    num
-  end
+  #if num.length == 1
+  #  num = num.to_i
+  #else
+  #  num
+  #end
 end
 
 def run_guessing_game
   num = random_num
   binding.pry
   user_num = get_user_guess
-  binding.pry 
+  binding.pry
   if user_num == num
     puts "You guessed the correct number!"
   elsif user_num == "exit"
