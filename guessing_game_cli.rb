@@ -8,7 +8,7 @@ end
 def get_user_guess
   puts "Enter number between 1 and 6"
   num = gets.chomp
-  binding.pry 
+  binding.pry
   if num.length == 1
     num = num.to_i
   else
@@ -18,7 +18,7 @@ end
 
 def run_guessing_game
   num = random_num
-  binding.pry 
+  binding.pry
   user_num = get_user_guess
   binding.pry 
   if user_num == num
