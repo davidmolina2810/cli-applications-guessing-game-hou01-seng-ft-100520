@@ -1,5 +1,4 @@
 # Code your solution here!
-require 'pry'
 
 def random_num
   rand(1..6)
@@ -17,9 +16,9 @@ end
 
 def run_guessing_game
   num = random_num
-  binding.pry
+  #binding.pry
   user_num = get_user_guess
-  binding.pry
+  #binding.pry
   if user_num.length == 1
     user_num = user_num.to_i
     if user_num == num
